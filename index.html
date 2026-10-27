@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <button id="themeBtn" type="button">🌙 Dark mode</button>
+        </div>
+
+        <h1 class="page-title">Wordly Dictionary</h1>
+
+        <form id="searchForm">
+            <input type="text" class="input" id="searchInput" placeholder="Enter a word" autocomplete="off">
+            <button type="submit">Search</button>
+        </form>
+
+        <p class="info" id="infoText">Type a word and press Search.</p>
+
+        <div class="meaning-container" id="meaning-container" style="display:none">
+            <h2 id="title"></h2>
+            <p id="phonetic"></p>
+            <audio controls preload="metadata" id="audio"></audio>
+            <p id="audioNote"></p>
+            <button id="speakBtn" type="button" style="display:none">🔊 Speak word</button>
+            <div id="meanings"></div>
+            <p id="source"></p>
+            <button id="saveBtn" type="button">☆ Save word</button>
+        </div>
+
+        <section>
+            <h3>Favorites</h3>
+            <ul id="favorites"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
